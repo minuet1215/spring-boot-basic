@@ -1,0 +1,19 @@
+@startuml
+
+class Client
+class OrderServiceImpl implements OrderService
+class MemoryMemberRepository
+class FixDiscountPolicy
+
+Client -> OrderServiceImpl
+OrderServiceImpl -> MemoryMemberRepository
+OrderServiceImpl --> FixDiscountPolicy
+
+'class DbMemberRepository
+'class RateDiscountPolicy
+'
+'OrderServiceImpl -> DbMemberRepository
+'OrderServiceImpl --> RateDiscountPolicy
+
+
+@enduml

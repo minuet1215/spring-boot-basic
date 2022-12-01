@@ -1,0 +1,16 @@
+@startuml
+
+interface OrderService
+interface MemberRepository
+interface DiscountPolicy
+
+class OrderServiceImpl implements OrderService
+class MemoryMemberRepositry implements MemberRepository
+class DbMemberRepositry implements MemberRepository
+class FixDiscountPolicy implements DiscountPolicy
+class RateDiscountPolicy implements DiscountPolicy
+
+OrderServiceImpl -> MemberRepository
+OrderServiceImpl -> DiscountPolicy
+
+@enduml
