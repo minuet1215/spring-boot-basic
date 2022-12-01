@@ -1,0 +1,9 @@
+@startuml
+
+object Client
+object MemberService
+object MemoryMemberRepository
+
+Client -> MemberService
+MemberService -> MemoryMemberRepository
+@enduml

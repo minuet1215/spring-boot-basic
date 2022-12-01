@@ -1,0 +1,13 @@
+@startuml
+
+@startuml
+class MemberServiceImpl implements MemberService
+
+interface MemberRepository
+
+MemberServiceImpl --> MemberRepository
+
+class MemoryMemberRepository implements MemberRepository
+class DbMemberRepository implements MemberRepository
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+class Client
+class MemberService {
+    join()
+    find()
+}
+
+interface MemberRepository
+class MemoryMemberRepository implements MemberRepository
+class DbMemberRepository implements MemberRepository
+class ThirdPartyMemberRepository implements MemberRepository
+
+Client --> MemberService
+MemberService --> MemberRepository
+
+
+@enduml
