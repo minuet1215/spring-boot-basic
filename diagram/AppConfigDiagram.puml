@@ -1,0 +1,11 @@
+@startuml
+
+class MemberServiceImpl implements MemberService
+class MemoryMemberRepository implements MemberRepository
+class AppConfig
+AppConfig --> MemberServiceImpl: 생성자 주입
+AppConfig --> MemoryMemberRepository: 생성자 주입
+MemberServiceImpl -> MemberRepository: 인터페이스에만 의존
+
+
+@enduml
