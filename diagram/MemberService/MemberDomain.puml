@@ -2,12 +2,11 @@
 
 @startuml
 class MemberServiceImpl implements MemberService
-
+class MemoryMemberRepository implements MemberRepository
+class DbMemberRepository implements MemberRepository
 interface MemberRepository
 
 MemberServiceImpl --> MemberRepository
 
-class MemoryMemberRepository implements MemberRepository
-class DbMemberRepository implements MemberRepository
 
 @enduml
