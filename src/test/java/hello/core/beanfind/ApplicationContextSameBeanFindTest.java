@@ -2,7 +2,6 @@ package hello.core.beanfind;
 
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
